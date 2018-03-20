@@ -122,6 +122,10 @@ contains(names, 'Colt', function(result){
 */
 
 //Code Here
+function uniq(arr, cb){
+  var newArr = arr.filter((elem, index, self) => index === self.indexOf(elem));
+  return cb(newArr);
+}
 
 // Do not edit the code below.
 uniq(names, function(uniqArr){
