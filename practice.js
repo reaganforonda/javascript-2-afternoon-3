@@ -29,7 +29,7 @@
 
 // Code Here 
 function first(arr, cb){
-  return cb(arr);
+  return cb(arr[0]);
 }
 
 // Do not edit the code below.
@@ -72,6 +72,9 @@ last(names, function(lastName){
 */
 
 //Code Here
+function multiply(num1, num2, cb){
+  return cb(num1 * num2);
+}
 
 // Do not edit the code below.
 multiply(4, 3, function(answer){
@@ -91,6 +94,13 @@ multiply(4, 3, function(answer){
 */
 
 //Code Here 
+function contains(arr, name, cb){
+  if(arr.indexOf(name) !== -1){
+    return cb(true);
+  } else{
+    cb(false);
+  }
+}
 
 // Do not edit the code below.
 contains(names, 'Colt', function(result){
